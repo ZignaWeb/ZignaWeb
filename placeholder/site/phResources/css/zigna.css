@@ -1,0 +1,195 @@
+/* Zigna 2014 all rights reserved */
+/***********GENERAL*******************************************************/
+@font-face {
+	font-family: 'Simplifica';
+  	src: url('../../css/simplifica_typeface-webfont.eot'); /* IE9 Compat Modes */
+  	src: url('../../css/simplifica_typeface-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../../css/simplifica_typeface-webfont.woff') format('woff'), /* Modern Browsers */
+url('../../css/simplifica_typeface-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../../css/simplifica_typeface-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */  
+}
+@font-face {
+	font-family: 'Scratch';
+  	src: url('../../css/scratch_detail-webfont.eot'); /* IE9 Compat Modes */
+  	src: url('../../css/scratch_detail-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../../css/scratch_detail-webfont.woff') format('woff'), /* Modern Browsers */
+url('../../css/scratch_detail-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../../css/scratch_detail-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */  
+}
+@font-face {
+	font-family: 'Socialico';
+  	src: url('../../css/socialico-webfont.eot'); /* IE9 Compat Modes */
+  	src: url('../../css/socialico-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../../css/socialico-webfont.woff') format('woff'), /* Modern Browsers */
+url('../../css/socialico-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../../css/socialico-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */  
+}
+@font-face {
+	font-family: 'SocialicoPlus';
+  	src: url('../../css/socialico_plus-webfont.eot'); /* IE9 Compat Modes */
+  	src: url('../../css/ssocialico_plus-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../../css/socialico_plus-webfont.woff') format('woff'), /* Modern Browsers */
+url('../../css/socialico_plus-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../../css/socialico_plus-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */  
+}
+.end {
+	float:none;
+}
+.table{
+	display:table;
+}
+.table-row{
+	display:table-row;
+}
+.table-cell{
+	display:table-cell;
+	vertical-align:middle;
+	height:100%;
+}
+/*************************************************************************/
+/***********BODY**********************************************************/
+.has-tip {
+	border:none !important;
+}
+html{
+	height:100%;
+}
+body {
+	height:100% !important;
+	font-family: 'Simplifica', Fallback, sans-serif;
+	background:url(../img/background.jpg);
+	overflow-x:hidden;
+}
+article#welcome {
+	height: 100vh;
+}
+/*naranja #f05b40
+griso #504d50
+grisc #e6e6e6
+verde #78a22f
+negro #151313
+marronverde #4b4b34
+violeta 7B72D8
+azulo 274F7D
+azulc 689AD3*/
+article#silenzio {
+	height: 80vh;
+	background:#e6e6e6;
+}
+article#dynamis {
+	height: 80vh;
+	background:#02535e;
+	color:#FFF;
+}	
+article#gallery9 {
+	height: 80vh;
+	background:#504d50;
+	color:#e6e6e6;
+}	
+article#fabrizzi {
+	height: 80vh;
+	background:#151313;
+	color:#e6e6e6;
+}	
+article#estacion {
+	height: 80vh;
+	background:#78a22f;
+	color:#e6e6e6;
+}	
+.logo{
+	padding-top:10%;
+}
+@media only screen and (max-width: 40.063em) {
+	
+}
+#welcome p{
+	padding-top:50px;
+}
+#welcome span{
+	color:#FF6633;
+}
+p{
+	font-size:36px;
+}
+.projects span:first-child{
+	font-size:36px;
+}
+.projects span{
+	font-size:24px;
+}
+.portfolio {
+	z-index:1000;
+	font-weight:bold;
+	font-size:20px;
+	position:absolute;
+	right:0;
+	top:40%;
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg); /* IE 9 */
+	-webkit-transform:rotate(90deg); /* Opera, Chrome, and Safari */	
+}
+.portfolio a {
+	color:inherit;
+}
+.portfolio
+{
+-webkit-animation: anim 5s; /* Chrome, Safari, Opera */
+animation: anim 1s;
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count:infinite;
+animation-timing-function:linear;
+-webkit-animation-timing-function:linear; /* Safari and Chrome */
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes anim
+{
+0% { top:40%}
+25% { top:41%}
+50% { top:40%}
+75% { top:39%}
+100% { top:40%}
+}
+
+/* Standard syntax */
+@keyframes anim
+{
+0% { top:40%}
+25% { top:41%}
+50% { top:40%}
+75% { top:39%}
+100% { top:40%}
+}
+/*************************************************************************/
+/***********FOOTER********************************************************/
+footer{
+	z-index:1000;
+	position:fixed;
+	bottom:0;
+	background:#262324;
+	height:50px;
+	color:#e6e6e6;
+}
+footer .copy{
+	color:#e6e6e6;
+	position:absolute;
+	top:30%;
+	left:1%;
+	
+}
+footer img#backtop{
+	height:40px;
+	width:auto !important;
+	position:absolute;
+	top:8%;
+	left:48%;
+}
+footer div{
+	position:absolute;
+	top:30%;
+	right:1%;
+}
+footer div img{
+	height:20px;
+}
+/*************************************************************************/

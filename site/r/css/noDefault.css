@@ -1,0 +1,4 @@
+body ,ol, ul, li, p, h1, h2, h3, h4 { padding:0px; margin:0px; list-style:none}
+a { color:inherit; text-decoration:none}
+h1, h2, h3 { font-weight:normal;}
+div, ol, p { overflow:auto}

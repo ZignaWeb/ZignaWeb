@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Circular text</title>
+<style>
+@-webkit-keyframes spin {
+	0%   {-webkit-transform: rotate(0deg)}
+	100% {-webkit-transform: rotate(360deg)}
+}
+
+p {
+	position:relative; height:20em; width:40em; font-size:1em; display:block; padding-bottom:20em;
+}
+.rotateCW { 
+	-webkit-animation: spin 100s infinite linear;
+}
+span {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
+  font: 1em Monaco, MonoSpace;
+  height: 20em;
+  position: absolute;
+  width: 1em;
+  left: 50%;
+  bottom: 50%;
+  transform-origin: bottom center;
+  -webkit-transform-origin : bottom center;
+  -ms-transform-origin: bottom center;
+}
+#text2 { position:relative; top:-20em}
+</style>
+<script type="text/javascript" src="../r/js/jquery.js"></script>
+</head>
+
+<body>
+<p id="text1" class="rotateCW">Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. </p>
+<p id="text2" class="rotateCW">Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. Determing the proyect requirements and stablishing a strategy. </p>
+<script>
+
+circularText ($("#text1"),"espiral",6) ;
+circularText ($("#text2"),"espiral",6) ;
+
+function circularText (id,tipo,stepAngle) {
+	
+var str=$(id).text();
+var newStr="";
+var len = str.length
+
+for (var i = 0; i < len; i++) {
+	pt = i/360*stepAngle*20;
+	if (tipo == "espiral") {padTop = "padding-top:"+pt+"px;"}
+	newStr += "<span style='"+padTop+"transform:rotate("+(stepAngle*i)+"deg);-ms-transform:("+(stepAngle*i)+"deg);-webkit-transform:rotate("+(stepAngle*i)+"deg);'>"+str[i]+"</span>";
+}
+$(id).html(newStr);
+}
+</script>
+</body>
+</html>

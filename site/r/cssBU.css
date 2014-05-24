@@ -1,0 +1,82 @@
+@import url("css/noDefault.css");
+@charset "utf-8";
+/* CSS Document */
+/* celeste: #23BBE8 */
+html, body { min-height:100%;}
+body { font-family:Verdana, Geneva, sans-serif}
+* {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+a { color:inherit}
+footer a { color:#FFF}
+a:hover { color:#23BBE8}
+footer a:hover { color: #036;}
+header, footer, section {padding:10px;}
+/*-----Header-----*/
+header { 
+	border-bottom:#23BBE8 solid 1px; height:43px; line-height:43px; font-size:15px;
+	position:fixed; top:0; left:0; right:0; background:#FFF
+}
+header h1 { width:43px; height:43px; float:left; margin-right:40px}
+nav ol ,nav li { display:inline} 
+	
+	/*-----Menu-----*/	
+	nav li { cursor:pointer;}
+	nav > ol > li:hover { 
+		color:#23BBE8;
+	}
+	nav > ol > li.hover > ol > li {display:inline-block; min-width:10px;}
+	
+	nav > ol > li > ol > li { display:none;}
+	
+	header nav > ol > li { margin-right:20px; }
+	header nav > ol > li > ol > li { display:none; margin-left:10px}
+	header nav > ol > li.hover > ol > li a {color:#000;}
+	header nav > ol > li.hover > ol > li:hover a { color:#23BBE8}
+	header nav > ol > li.hover span:after {content:":"}
+	header nav > ol:hover > li:not(:hover) a { color:#CCC;}
+	
+	header nav > ol > li:not(.idiomas) { margin-right:20px; }
+	header nav > ol > li:not(.idiomas) > ol {}
+	header nav > ol:hover > li:not(:hover) a { color:#CCC}
+	
+	footer nav > ol > li:hover > ol > {color:#FFF;}
+	footer nav > ol > li > ol > li > a {font-size:12px;}
+	footer nav > ol > li > ol > li > a:before {content:"● "; color:#09C;}
+	footer nav > ol > li:hover > ol > li:hover { color:#FFF;}
+	footer nav > ol:hover > li:not(:hover) a { color: #09C;}
+	
+	.activo { display:inline-block}
+	.idiomas{ float:right}
+	
+	/*-----/Menu-----*/
+
+.a100{ width:100%}
+	
+/*-----/Header-----*/
+
+
+/*-----Contenido-----*/
+section { margin-top:60px;}
+/*----/Contenido-----*/
+
+
+/*-----Footer-----*/
+footer {background:#23BBE8; font-size:15px; color:#FFF; display:block; overflow:auto; margin-top:40px; padding:0 10px;}
+footer nav.left .clientlogin { font-weight:bold; padding:5px 0; width:100px; display:block;}
+footer nav.left {float:left;}
+
+footer nav.left ol { display:block; overflow:auto;} 
+footer nav.left a {}
+
+footer div.right{ float:right;  }
+footer div.right > div:nth-of-type(1) { margin:15px 15px 10px 0 ;}
+footer div.right div:nth-of-type(1) div:nth-of-type(1) { float:left}
+footer div.right > div > div p { width:auto;}
+footer div.right > div > div h2,
+footer div.right > div > div p { margin:0 20px 0px 0;} 
+/*-----/Footer-----*/

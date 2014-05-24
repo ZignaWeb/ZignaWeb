@@ -1,0 +1,108 @@
+/*-----Proccess-----*/
+ol#bub, ol#bub * {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+ol#bub { 
+	padding-bottom:21%; position:relative; width:85%; overflow:visible; height:auto; cursor:default; 
+	font-size:1em;
+	padding:15% 0;
+}
+ol#bub > li { 
+	padding:15%; height:0; width:0; overflow:visible; display:block;
+	border-radius:50%;
+	border:1px solid #D03238;
+	z-index:0;
+}
+ol#bub > li:hover,
+ol#bub > li:focus {
+	z-index:1;
+	background:#FFF;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+}
+ol#bub > li:hover > h3 {
+	top:20%; left:20%;
+	width:60%; height:60%;
+}
+ol#bub > li:nth-of-type(1) { position:absolute; top:0; left:0;}
+ol#bub > li:nth-of-type(2) { position:absolute; top:0; left:23.5%;}
+ol#bub > li:nth-of-type(3) { position:absolute; top:0; left:47%;}
+ol#bub > li:nth-of-type(4) { position:absolute; top:0; left:70.5%;}
+
+ol#bub > li > h3 {
+	position:absolute; 
+	top:25%; left:25%;
+	width:50%; height:50%;
+	text-align:center; font-size:1em;
+	background:#FFF;
+	border-radius:50%;
+	background-color:rgba(200,200,200,0.2);
+}
+ol#bub > li > h3 > span { 
+	height:24px; position:relative; display:block;
+	top:50%; margin-top:-12px;
+}
+ol#bub > li > ol { overflow:visible;}
+ol#bub > li > ol > li { 
+	position:absolute; display:block;
+	height:5%; width:5%;
+	border-radius:50%;
+	margin:-2.5% 0 0 -2.5%;
+	z-index:1;
+	font-size:0px;
+}
+ol#bub > li > ol > li:hover { z-index:1}
+ol#bub > li > ol > li:not(:hover) { z-index:0}
+ol#bub > li > ol > li.us {background: #D03238;}
+ol#bub > li > ol > li.you {background: #D03238;}
+ol#bub > li > ol > li.we {background: #D03238;}
+/* posiciones burbujas explicativas */
+ol#bub > li > ol > li.iniMeet {top:50%; left:0;}
+ol#bub > li > ol > li.iniMeet:hover {background-image:url(../img/iconos/proceso/meet.png); -moz-background-size:cover; background-size:cover;}
+ol#bub > li > ol > li.needA {top:1%; left:40%;}
+ol#bub > li > ol > li.needA:hover {background-image:url(../img/iconos/proceso/asses.png); background-size:cover;}
+ol#bub > li > ol > li.estra {top:4%; left:70%;}
+ol#bub > li > ol > li.estra:hover {background-image:url(../img/iconos/proceso/estrategy.png); background-size:cover;}
+ol#bub > li > ol > li.feedback {top:81%; left:89%;}
+ol#bub > li > ol > li.feedback:hover {background-image:url(../img/iconos/proceso/feedback.png); background-size:cover;}
+ol#bub > li > ol > li.wireframe {top:9%; left:21%;}
+ol#bub > li > ol > li.wireframe:hover {background-image:url(../img/iconos/proceso/wireframe.png); background-size:cover;}
+ol#bub > li > ol > li.dproposal {top:9%; left:79%;}
+ol#bub > li > ol > li.dproposal:hover {background-image:url(../img/iconos/proceso/proposal.png); background-size:cover;}
+ol#bub > li > ol > li.submit {top:90%; left:20%;}
+ol#bub > li > ol > li.submit:hover {background-image:url(../img/iconos/proceso/send.png); background-size:cover;}
+ol#bub > li > ol > li.front {top:0%; left:50%;}
+ol#bub > li > ol > li.front:hover {background-image:url(../img/iconos/proceso/front.png); background-size:cover;}
+ol#bub > li > ol > li.back {top:10%; left:80%;}
+ol#bub > li > ol > li.back:hover {background-image:url(../img/iconos/proceso/back.png); background-size:cover;}
+ol#bub > li > ol > li.refi {top:0%; left:50%;}
+ol#bub > li > ol > li.refi:hover {background-image:url(../img/iconos/proceso/refi.png); background-size:cover;}
+ol#bub > li > ol > li.tutor {top:99%; left:60%;}
+ol#bub > li > ol > li.tutor:hover {background-image:url(../img/iconos/proceso/tutor.png); background-size:cover;}
+ol#bub > li > ol > li.launch {top:10%; left:80%;}
+ol#bub > li > ol > li.launch:hover {background-image:url(../img/iconos/proceso/launch.png); background-size:cover;}
+ol#bub > li > ol > li.moni {top:50%; left:100%;}
+ol#bub > li > ol > li.moni:hover {background-image: url(../img/iconos/proceso/report.png); background-size:cover;}
+
+ol#bub > li > ol > li > span {
+	font-size:0px; text-align:center; color:#FFF;
+	display:block; position:absolute; bottom:45%; left:0; right:0;
+}
+
+
+/* hover bubbles */
+ol#bub > li > ol > li:hover {
+	width:50%; height:50%; margin:-25% 0 0 -25%;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+	border:0.3em solid #FFF;
+	font-size:1em;
+}
+ol#bub > li > ol > li:hover span { font-size:1em;}
+/*-----/Proccess-----*/
