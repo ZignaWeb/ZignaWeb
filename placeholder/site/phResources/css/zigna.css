@@ -91,11 +91,12 @@ article#fabrizzi {
 	background:#151313;
 	color:#e6e6e6;
 }	
-article#estacion {
+article#sibaris {
 	height: 80vh;
-	background:#78a22f;
-	color:#e6e6e6;
+	background:#f05b40;
 }	
+article#sibaris img{
+}
 .logo{
 	padding-top:10%;
 }
